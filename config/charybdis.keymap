@@ -61,12 +61,12 @@
 
         Escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
-        Shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 21>;
+        Quote {
+            bindings = <&kp SQT>;
+            key-positions = <19 18>;
         };
     };
 
@@ -152,10 +152,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&as_ht Q Q    &as_ht W W              &as_ht E E  &as_ht R R  &as_ht T T   &as_ht Y Y  &as_ht U U  &as_ht I I          &as_ht O O      &as_ht P P
-&lt 5 A       &lt 4 S                 &lt 3 D     &lt 2 F     &as_ht G G   &as_ht H H  &as_ht J J  &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
-&as_ht Z Z    &as_ht X X              &as_ht C C  &as_ht V V  &as_ht B B   &as_ht N N  &as_ht M M  &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH
-&lt 6 ESCAPE  &mt LEFT_COMMAND SPACE  &lt 1 TAB   &sl 7       &lt 7 ENTER  &kp BSPC
+&as_ht Q Q  &as_ht W W              &as_ht E E  &as_ht R R  &as_ht T T   &as_ht Y Y  &as_ht U U  &as_ht I I          &as_ht O O      &as_ht P P
+&lt 5 A     &lt 4 S                 &lt 3 D     &lt 2 F     &as_ht G G   &as_ht H H  &as_ht J J  &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
+&as_ht Z Z  &as_ht X X              &as_ht C C  &as_ht V V  &as_ht B B   &as_ht N N  &as_ht M M  &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH
+&sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB   &sl 7       &lt 7 ENTER  &kp BSPC
             >;
         };
 
@@ -218,10 +218,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR    &kp PERCENT            &kp CARET      &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
-&kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets     &kp LS(RIGHT_BRACKET)  &func_arrow    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &mt PIPE BACKSLASH
-&kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5           &kp NUMBER_6   &kp N7                &kp N8                 &kp N9     &kp N0
-&kp GRAVE       &trans            &trans             &kp TILDE     &as_ht COLON PERIOD    &kp BACKSPACE
+&kp UNDERSCORE  &kp AT            &kp HASH           &kp DOLLAR         &kp PERCENT            &kp CARET      &kp AMPERSAND         &kp ASTERISK           &kp MINUS  &kp PLUS
+&kp EXCL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &Brackets          &kp LS(RIGHT_BRACKET)  &func_arrow    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &mt PIPE BACKSLASH
+&kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4       &kp NUMBER_5           &kp NUMBER_6   &kp N7                &kp N8                 &kp N9     &kp N0
+&kp GRAVE       &kp TILDE         &trans             &kp DOUBLE_QUOTES  &as_ht COLON PERIOD    &kp BACKSPACE
             >;
         };
 
