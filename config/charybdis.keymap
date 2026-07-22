@@ -152,10 +152,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&as_ht Q Q  &as_ht W W              &as_ht E E  &as_ht R R  &as_ht T T   &as_ht Y Y  &as_ht U U  &as_ht I I          &as_ht O O      &as_ht P P
-&lt 5 A     &lt 4 S                 &lt 3 D     &lt 2 F     &as_ht G G   &as_ht H H  &as_ht J J  &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
-&as_ht Z Z  &as_ht X X              &as_ht C C  &as_ht V V  &as_ht B B   &as_ht N N  &as_ht M M  &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH
-&sl 6       &mt LEFT_COMMAND SPACE  &lt 1 TAB   &sl 7       &lt 7 ENTER  &kp BSPC
+&as_ht Q Q        &as_ht W W              &as_ht E E  &as_ht R R  &as_ht T T   &as_ht Y Y  &as_ht U U  &as_ht I I          &as_ht O O      &as_ht P P
+&lt 5 A           &lt 4 S                 &lt 3 D     &lt 2 F     &as_ht G G   &as_ht H H  &as_ht J J  &as_ht K K          &as_ht L L      &mt SEMICOLON COLON
+&mt LEFT_SHIFT Z  &as_ht X X              &as_ht C C  &as_ht V V  &as_ht B B   &as_ht N N  &as_ht M M  &as_ht COMMA COMMA  &as_ht DOT DOT  &as_ht FSLH FSLH
+&sl 6             &mt LEFT_COMMAND SPACE  &lt 1 TAB   &sl 7       &lt 7 ENTER  &kp BSPC
             >;
         };
 
@@ -230,7 +230,7 @@
             bindings = <
 &trans         &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)       &kp LG(N0)      &kp K_MUTE        &kp C_VOLUME_DOWN          &kp C_VOLUME_UP          &trans
 &kp LS(A)      &kp LS(S)         &kp LS(D)         &kp LS(F)         &kp LS(LA(LC(LG(G))))  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp LA(LS(C_VOLUME_DOWN))  &kp LA(LS(C_VOLUME_UP))  &kp C_NEXT
-&trans         &kp LC(LG(E))     &kp LA(LG(E))     &kp LC(LG(A))     &kp LC(LG(F))          &kp LC(LG(Q))   &kp LG(MINUS)     &kp LG(EQUAL)              &trans                   &trans
+&kp LS(Z)      &kp LC(LG(E))     &kp LA(LG(E))     &kp LC(LG(A))     &kp LC(LG(F))          &kp LC(LG(Q))   &kp LG(MINUS)     &kp LG(EQUAL)              &trans                   &trans
 &kp LG(GRAVE)  &kp LG(SPACE)     &kp LG(TAB)       &alt_tab_on       &trans                 &trans
             >;
         };
@@ -242,6 +242,15 @@
 &alt_tab_esc  &trans  &trans  &trans  &trans          &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
 &trans        &trans  &trans  &trans  &trans          &trans  &trans    &trans          &trans     &trans
 &trans        &trans  &trans  &trans  &alt_tab_enter  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kt LS(LA(LC(LG(R))))  &trans                 &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(A))))  &kp LS(LG(LC(LA(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kt LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &trans                 &trans  &trans  &trans  &trans  &trans
+&kp LG(GRAVE)          &kp LG(SPACE)          &kp LG(TAB)            &alt_tab_on            &trans                 &trans
             >;
         };
     };
